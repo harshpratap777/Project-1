@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+/* Card */
+.card {
+  width: 400px;
+  max-width: 90%;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Search */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  flex: 1;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search button {
+  border: none;
+  background: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search button img {
+  width: 20px;
+}
+
+/* Error Message */
+.error {
+  display: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff3333;
+  text-align: center;
+  margin: 10px 0 20px;
+  background: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Weather Info */
+.weather {
+  display: none;
+}
+
+.weather-icon {
+  width: 100px;
+  margin: 20px auto;
+}
+
+.temp {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.city {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.col img {
+  width: 40px;
+}
